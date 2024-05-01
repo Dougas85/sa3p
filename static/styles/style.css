@@ -65,7 +65,7 @@ button {
     background: linear-gradient(to right, gold, rgb(255, 123, 0));
     cursor: pointer;
     justify-content: center;
-    width: 30%; /* alterado para 100% para preencher o espaço disponível */
+    width: 50%; /* alterado para 100% para preencher o espaço disponível */
     margin: 0 auto;
     display: inline-block;
     transition: transform 0.3s ease;
