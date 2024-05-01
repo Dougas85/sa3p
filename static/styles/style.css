@@ -147,6 +147,12 @@ button:hover {
         padding: 5px;
         margin: 5px;
     }
+    .quadro2 {
+        flex-direction: column; /* Organizar conteúdo verticalmente */
+        padding: 5px;
+        margin: 5px;
+    }    
+        
 
     .button-group {
         flex-direction: column; /* Botões empilhados verticalmente */
