@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    font-size: 48px; /* Original font size */
+    font-size: 48px; /* Tamanho original da fonte */
     color: transparent;
     background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
     background-clip: text;
@@ -19,7 +19,7 @@ h1 {
 
 #question, #answer {
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 24px; /* Original font size */
+    font-size: 24px; /* Tamanho original da fonte */
     text-align: center;
     color: black;
 }
@@ -84,14 +84,14 @@ button:hover {
     }
 }
 
-/* Media Queries for better mobile responsiveness */
+/* Media Queries para responsividade */
 @media (max-width: 600px) {
     h1 {
-        font-size: 24px; /* Smaller font size for smaller screens */
+        font-size: 24px; /* Tamanho menor da fonte para telas pequenas */
     }
 
     #question, #answer {
-        font-size: 18px; /* Smaller font size for readability on small devices */
+        font-size: 18px; /* Tamanho menor da fonte para melhor leitura */
     }
 
     .quadro, .container {
@@ -100,13 +100,36 @@ button:hover {
     }
 
     button {
-        font-size: 24px; /* Larger buttons for easier interaction on touch devices */
+        font-size: 24px; /* Botões maiores para interação mais fácil */
         padding: 8px 16px;
-        width: 100%; /* Full width for better accessibility */
+        width: 100%; /* Largura total para melhor acessibilidade */
     }
 
     .button-group {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        flex-direction: column; /* Empilhar botões verticalmente em telas menores */
     }
 }
 
+@media (orientation: landscape) and (max-width: 800px) {
+    h1 {
+        font-size: 3vw; /* Tamanho da fonte baseado na largura da viewport */
+    }
+
+    #question, #answer {
+        font-size: 2.5vw; /* Tamanho menor da fonte para paisagem */
+    }
+
+    .quadro {
+        flex-direction: column; /* Organizar conteúdo verticalmente */
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .button-group {
+        flex-direction: column; /* Botões empilhados verticalmente */
+    }
+
+    button {
+        width: 90%; /* Botões mais largos */
+    }
+}
