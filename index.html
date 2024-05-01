@@ -90,10 +90,19 @@
         window.onload = loadRandomQuestion;
 
         // Mostrar ou esconder a resposta
-        document.getElementById('show-answer').onclick = function() {
-            var answerDiv = document.getElementById('answer');
-            answerDiv.style.display = answerDiv.style.display === 'none' ? 'block' : 'none';
-        };
+   document.getElementById('show-answer').onclick = function() {
+    var quadro2 = document.querySelector('.quadro2');
+    var answerDiv = document.getElementById('answer');
+    // Alterna a visibilidade do quadro2 e da resposta juntos
+    if (quadro2.style.display === 'none') {
+        quadro2.style.display = 'block'; // Mostra o quadro2
+        answerDiv.style.display = 'block'; // Mostra a resposta
+    } else {
+        quadro2.style.display = 'none'; // Esconde o quadro2
+        answerDiv.style.display = 'none'; // Esconde a resposta
+    }
+};
+
     </script>
 </body>
 </html>
