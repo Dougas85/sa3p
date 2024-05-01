@@ -17,8 +17,12 @@ h1 {
     font-size: 24px; /* tamanho padrão para telas grandes */
     text-align: center;
     color: black;
-    background-color: yellow; /* Cor de fundo para simular o grifo */
 }
+
+#question {
+    background-color: yellow; /* Cor de fundo para simular o grifo */
+
+  }
 
 .quadro {
     display: flex;
@@ -80,5 +84,12 @@ button:hover {
     button {
         font-size: 24px; /* Reduz o tamanho da fonte do botão */
     }
+    0%{
+        transform: scale(1);
+    }
+    100%{
+         transform: scale(1.05);
+    }
+
 }
 
