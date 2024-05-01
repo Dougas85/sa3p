@@ -57,9 +57,10 @@ h1 {
     padding: 20px;
     margin: 50px;
     background-color: #f0f0f0;
-    width: auto;
-    height: auto;
+    width: 100%; /* Definindo a largura como 100% para ocupar o mesmo espaço que o quadro1 */
+    height: auto; /* Mantendo a altura automática para se ajustar ao conteúdo */
 }
+
 
 .container {
     display: grid;
