@@ -136,6 +136,9 @@ button:hover {
 }
 
 @media (orientation: landscape) and (max-width: 800px) {
+    body {
+        padding: 20px;  /* Aumenta o padding do body para mais espaço ao redor */
+    }
     h1 {
         font-size: 3vw; /* Tamanho da fonte baseado na largura da viewport */
     }
@@ -148,19 +151,20 @@ button:hover {
     .quadro {
         flex-direction: column; /* Organizar conteúdo verticalmente */
         padding: 5px;
-        margin: 5px;
+        margin: 20px 10px;
         widht: 100%; /* Ajuste para utilizar toda a largura disponível */
     }
     .quadro2 {
         flex-direction: column; /* Organizar conteúdo verticalmente */
         padding: 5px;
-        margin: 5px;
+        margin: 20px 10px;
         width: 100%; /* Ajuste para utilizar toda a largura disponível */
     }    
         
 
     .button-group {
-        flex-direction: column; /* Botões empilhados verticalmente */
+        flex-direction: column;/* Botões empilhados verticalmente */
+        margin: 10px 0;
     }
 
     button {
