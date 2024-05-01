@@ -1,99 +1,84 @@
-/* static/styles/style.css */
-
 body {
     background-image: url('/static/imagens/imagem.png');
     background-size: cover;
     background-position: right;
     padding: 10px;
+}
 
-}
-h1{
-    font-size: larger;
+h1 {
+    font-size: 75px; /* tamanho grande para telas largas */
     text-align: center;
-    justify-content: center;
-    font-size: 75px;
-    font-family:'Times New Roman', Times, serif;
-    color:blue;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
 }
+
 #question, #answer {
-    font-family: Comic Sans MS, sans-serif;
-    font-size: 24px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 24px; /* tamanho padrão para telas grandes */
     text-align: center;
-    justify-content: center;
-    color:black;
-
-}
-#question {
+    color: black;
     background-color: yellow; /* Cor de fundo para simular o grifo */
-
-  }
-  
-.quadro {
-        display:flex;
-        justify-content:space-between;
-        align-items:flex-start;
-        border: 2px solid #000; /* Define a borda do quadro */
-        padding: 20px; /* Espaço entre o texto e a borda do quadro */
-        margin: 50px; /* Espaço externo ao redor do quadro */
-        background-color: #f0f0f0; /* Cor de fundo do quadro */
-        width: 1100px; /* Largura do quadro */
-        height: auto; /* Altura automática baseada no conteúdo */
 }
 
-
+.quadro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 50px;
+    background-color: #f0f0f0;
+    width: auto; /* alterado para auto para ser mais responsivo */
+    height: auto;
+}
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    
-
+    grid-template-columns: 1fr;
 }
 
 .item {
     background-color: #f0f0f0;
     padding: 20px;
 }
+
 .button-group {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-button{
+
+button {
     font-size: 32px;
     padding: 10px 20px;
-    border: 0;
     border-radius: 15px;
-    color: white;
-    font-family: 400;
     background: linear-gradient(to right, gold, rgb(255, 123, 0));
     cursor: pointer;
-    justify-content: center;
-    width: 30%;
-    margin: 0 auto;
-    position: center;
-    display: inline-block;
-
+    width: 100%; /* alterado para 100% para preencher o espaço disponível */
 }
 
-button:hover{
-    animation-name: botao;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+button:hover {
     box-shadow: 0 0 50px 20px rgba(115, 0, 255, 0.5);
-
-
+    transform: scale(1.05);
 }
-@keyframes botao{
-    0%{
-        transform: scale(1);
 
+/* Media queries para adaptar a interface para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px; /* Reduz o tamanho do título para melhor visualização */
     }
-    100%{
-        transform: scale(1.05);
+    
+    #question, #answer {
+        font-size: 18px; /* Diminui o tamanho da fonte para perguntas e respostas */
     }
-
+    
+    .quadro {
+        flex-direction: column; /* Muda a direção para coluna */
+        margin: 20px; /* Reduz as margens */
+    }
+    
+    button {
+        font-size: 24px; /* Reduz o tamanho da fonte do botão */
+    }
 }
 
