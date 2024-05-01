@@ -149,11 +149,13 @@ button:hover {
         flex-direction: column; /* Organizar conteúdo verticalmente */
         padding: 5px;
         margin: 5px;
+        widht: 100%; /* Ajuste para utilizar toda a largura disponível */
     }
     .quadro2 {
         flex-direction: column; /* Organizar conteúdo verticalmente */
         padding: 5px;
         margin: 5px;
+        width: 100%; /* Ajuste para utilizar toda a largura disponível */
     }    
         
 
@@ -162,7 +164,7 @@ button:hover {
     }
 
     button {
-        width: 90%; /* Botões mais largos */
+        width: 50%; /* Botões mais largos */
     }
 }
 
