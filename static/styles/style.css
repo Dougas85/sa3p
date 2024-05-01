@@ -1,21 +1,30 @@
 body {
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Altura mínima para ocupar toda a viewport */
     background-image: url('/static/imagens/imagem.png');
     background-size: cover;
     background-position: right;
     padding: 10px;
+    margin: 0; /* Remove margem padrão */
 }
 
- h1 {
-            font-size: 48px;
-            justify-content: center;
-            color: transparent;
-            background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            animation: colorChange 5s ease-in-out infinite;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            cursor: pointer;
-        }
+h1 {
+    font-size: 48px; /* Ajustado conforme a necessidade */
+    color: transparent;
+    background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    animation: colorChange 5s ease-in-out infinite;
+}
+
+/* Resto do seu CSS, assegurando-se de que outros estilos não interfiram com os ajustes acima */
+
 
 #question, #answer {
     font-family: 'Comic Sans MS', sans-serif;
